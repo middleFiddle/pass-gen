@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "JetBrains Mono Bold";
+    src: url("./assets/fonts/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+.App {
+    background: linear-gradient(180deg, #14131b 0%, #08070b 100%);
+}
