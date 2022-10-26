@@ -1,4 +1,5 @@
 @tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
@@ -9,4 +10,71 @@
 
 .App {
     background: linear-gradient(180deg, #14131b 0%, #08070b 100%);
+}
+
+.label {
+    justify-content: start;
+}
+
+.checkbox + .label-text {
+    padding-left: 16px;
+}
+
+.checkbox {
+    border-radius: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox:hover {
+    border-color: #a4ffaf;
+}
+
+.mask-box {
+    background-color: #18171f;
+    border-color: #e6e5ea;
+    border-width: 1px;
+    width: 8px;
+    margin: auto auto;
+}
+
+#tooweak .mask-box:first-child {
+    background-color: #f64a4a;
+}
+
+#weak .mask-box:nth-child(1) {
+    background-color: #fb7c58;
+}
+#weak .mask-box:nth-child(2) {
+    background-color: #fb7c58;
+}
+
+#medium .mask-box {
+    background-color: #f8cd65;
+}
+#medium .mask-box:last-child {
+    background-color: #18171f;
+}
+
+#strong .mask-box {
+    background-color: #a4ffaf;
+}
+
+.range::-ms-thumb:hover {
+    background-color: #18171f;
+}
+.range::-moz-range-thumb:hover {
+    background-color: #18171f;
+}
+.range::-webkit-slider-thumb:hover {
+    background-color: #18171f;
+}
+
+.range::-webkit-slider-runnable-track {
+    background-color: #18171f;
+    fill: none;
+}
+
+.range::-webkit-slider-progress {
+    height: 1px;
 }
